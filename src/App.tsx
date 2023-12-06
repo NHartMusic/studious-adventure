@@ -11,7 +11,6 @@ function App() {
  
   return (
     <>
-      <h1>NH</h1>
       <MainNav />
       <Routes>
         <Route path='/Home' element={<Home />} />
