@@ -1,6 +1,6 @@
 import * as React from 'react'
 import { Routes, Route } from "react-router-dom"
-import MainNav from './MainNav'
+import Header from './Navigation/Header'
 
 import Home from './Pages/Home/index'
 import Music from './Pages/Music/index'
@@ -11,7 +11,7 @@ function App() {
  
   return (
     <>
-      <MainNav />
+      <Header />
       <Routes>
         <Route path='/Home' element={<Home />} />
         <Route path='/Music' element={<Music />} />

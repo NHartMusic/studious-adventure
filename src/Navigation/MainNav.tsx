@@ -20,32 +20,18 @@ const ListLink = styled(Link)`
 `
 
 const Navbar = styled.div`
-  margin: 0 auto;
   display: flex;
+  float: left;
 `
 
-const HomeLink = styled(Link)`
-  text-decoration: none;
-  color: blue;
-  transition: 0.3s;
-
-  &:hover {
-    color: red;
-    transition: 0.3s;
-  }
-`
-  
 function MainNav() {
   return (
     <>
-        <HomeLink to='/'>
-          <h1>NH</h1>
-        </HomeLink>
-        <Navbar>
-            <ListLink to='/Music'>Music</ListLink>
-            <ListLink to='/Tech'>Tech</ListLink>
-            <ListLink to='/Connect'>Connect</ListLink>
-        </Navbar>
+      <Navbar>
+        <ListLink to='/Music'>Music</ListLink>
+        <ListLink to='/Tech'>Tech</ListLink>
+        <ListLink to='/Connect'>Connect</ListLink>
+      </Navbar>
     </>
   )
 }
