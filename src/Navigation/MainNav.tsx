@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom"
 import styled from 'styled-components'
+import {randomColor2} from '../UI/ColorGenerator'
 
 const ListLink = styled(Link)`
   font-family: 'Roboto', sans-serif;
@@ -13,7 +14,7 @@ const ListLink = styled(Link)`
   display: flex;
 
   &:hover {
-    color: blue;
+    color: ${randomColor2};
     transition: 0.3s;
   }
 `
