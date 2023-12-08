@@ -1,9 +1,9 @@
-import * as React from 'react'
+import {ConnectTitle} from './styles'
 
 function Connect() {
   return (
     <>
-        <h1>Connect</h1>
+        <ConnectTitle>Connect</ConnectTitle>
     </>
   )
 }

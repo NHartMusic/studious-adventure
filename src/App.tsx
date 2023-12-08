@@ -1,7 +1,8 @@
 import * as React from 'react'
 import { Routes, Route } from "react-router-dom"
+//nav
 import Header from './Navigation/Header'
-
+//components
 import Home from './Pages/Home/index'
 import Music from './Pages/Music/index'
 import Tech from './Pages/Tech/index'
