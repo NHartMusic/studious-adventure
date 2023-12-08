@@ -7,10 +7,10 @@ import LinkedIn_White from '../Assets/LinkedIn_White.png'
 const Icon = styled.img`
     width: 100%;
     height: 100%;
-    min-width: 20px; 
-    min-height: 20px;
-    max-width: 50px; 
-    max-height: 50px;
+    min-width: 15px; 
+    min-height: 15px;
+    max-width: 30px; 
+    max-height: 30px;
     padding: 10px;
 `
 

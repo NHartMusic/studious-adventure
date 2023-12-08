@@ -3,8 +3,7 @@ import styled from 'styled-components'
 
 const ListLink = styled(Link)`
   font-family: 'Roboto', sans-serif;
-  border: 1px solid red;
-  color: red;
+  color: white;
   font-size: 1.8rem;
   padding: 10px;
   margin: 10px;

@@ -2,14 +2,16 @@ import { Link } from "react-router-dom"
 import styled from 'styled-components'
 
 const HomeLink = styled(Link)`
+  font-family: 'Roboto', sans-serif;
+  font-size: 2.0rem;
   text-decoration: none;
-  color: blue;
+  color: white;
   transition: 0.3s;
   display: flex;
   margin: 0 auto;
 
   &:hover {
-    color: red;
+    color: blue;
     transition: 0.3s;
   }
 `
@@ -17,9 +19,7 @@ const HomeLink = styled(Link)`
 function MainNav() {
     return (
       <>
-          <HomeLink to='/'>
-            <h1>NH</h1>
-          </HomeLink>
+          <HomeLink to='/'>NH</HomeLink>
       </>
     )
   }
