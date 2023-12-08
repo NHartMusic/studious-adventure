@@ -1,5 +1,8 @@
 export const getRandomColorFromList = (): string => {
     const colorList = [
+      '#C9F0F7',
+      '#B8EBF5',
+      '#A6E5F2',
       '#94E0F0',
       '#82DBED',
       '#70D6EB',
@@ -10,8 +13,6 @@ export const getRandomColorFromList = (): string => {
       '#1FB8D6',
       '#1CA8C4',
       '#1999B3',
-      '#178AA1',
-      '#147A8F',
     ];
   
     // Choose a random index from the colorList
