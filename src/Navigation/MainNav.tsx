@@ -5,7 +5,8 @@ import {randomColor2} from '../UI/ColorGenerator'
 const ListLink = styled(Link)`
   font-family: 'Roboto', sans-serif;
   color: white;
-  font-size: 1.8rem;
+  font-size: 1.4em;
+  font-weight: 200;
   padding: 10px;
   margin: 10px;
   text-decoration: none;
