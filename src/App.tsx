@@ -9,7 +9,6 @@ import Music from './Pages/Music/index'
 import Tech from './Pages/Tech/index'
 import Connect from './Pages/Connect/index'
 
-
 const ContentWrapper = styled.div`
   height: 100%;
   flex-direction: column; 

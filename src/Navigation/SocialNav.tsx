@@ -24,10 +24,10 @@ function SocialNav() {
     <>
         <Navbar>
             <a href="https://www.instagram.com/nhiacrkt/" target="_blank" rel="noopener noreferrer">
-                <Icon src={IG_White} />
+                <Icon src={LinkedIn_White} />
             </a>
             <a href="https://www.instagram.com/nhiacrkt/" target="_blank" rel="noopener noreferrer">
-                <Icon src={LinkedIn_White} />
+                <Icon src={IG_White} />
             </a>
             <a href="https://www.instagram.com/nhiacrkt/" target="_blank" rel="noopener noreferrer">
                 <Icon src={Github_White} />

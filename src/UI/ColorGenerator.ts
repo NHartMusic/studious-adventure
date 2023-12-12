@@ -11,8 +11,6 @@ export const getRandomColorFromList = (): string => {
       '#3BC7E3',
       '#29C2E0',
       '#1FB8D6',
-      '#1CA8C4',
-      '#1999B3',
     ];
   
     // Choose a random index from the colorList
@@ -25,9 +23,9 @@ export const getRandomColorFromList = (): string => {
   };
   
   // Example usage
-  export const randomColor1 = getRandomColorFromList();
-  export const randomColor2 = getRandomColorFromList();
-  export const randomColor3 = getRandomColorFromList();
-  export const randomColor4 = getRandomColorFromList();
-  export const randomColor5 = getRandomColorFromList();
-  export const randomColor6 = getRandomColorFromList();
+  export const randomColor1 = getRandomColorFromList()
+  export const randomColor2 = getRandomColorFromList()
+  export const randomColor3 = getRandomColorFromList()
+  export const randomColor4 = getRandomColorFromList()
+  export const randomColor5 = getRandomColorFromList()
+  export const randomColor6 = getRandomColorFromList()
