@@ -9,3 +9,7 @@ export const MusicTitle = styled(MainTitle)`
 export const MusicParagraph = styled(ParagraphMain)`
     color: ${randomColor2};
 `
+
+export const ListWrapper = styled.ul`
+    list-style-type: none;
+`

@@ -1,9 +1,15 @@
+
+//component imports
+import List from './List'
+
+//styles
 import { MusicTitle, MusicParagraph } from './styles'
 
 function Music() {
   return (
     <>
         <MusicTitle>Music</MusicTitle>
+        <List />
         <MusicParagraph>
           Nec feugiat in fermentum posuere urna nec. Feugiat sed lectus vestibulum mattis ullamcorper. Facilisi 
           cras fermentum odio eu feugiat pretium nibh. At erat pellentesque adipiscing commodo elit at imperdiet. 
