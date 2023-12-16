@@ -1,11 +1,11 @@
-import * as React from 'react'
-import { withStyles, Theme } from '@material-ui/core/styles'
-import MuiAccordion from '@material-ui/core/Accordion'
-import MuiAccordionSummary from '@material-ui/core/AccordionSummary'
-import MuiAccordionDetails from '@material-ui/core/AccordionDetails'
+import * as React from 'react';
+import { withStyles, Theme } from '@material-ui/core/styles';
+import MuiAccordion from '@material-ui/core/Accordion';
+import MuiAccordionSummary from '@material-ui/core/AccordionSummary';
+import MuiAccordionDetails from '@material-ui/core/AccordionDetails';
 
 interface CustomizedAccordionProps {
-  accordionData: Array<{ title: string; content: React.ReactNode }>
+  accordionData: Array<{ title: string; content: React.ReactNode; ranking: number }>;
 }
 
 const CustomAccordion = withStyles((theme: Theme) => ({
@@ -23,7 +23,7 @@ const CustomAccordion = withStyles((theme: Theme) => ({
     },
   },
   expanded: {},
-}))(MuiAccordion)
+}))(MuiAccordion);
 
 const CustomAccordionSummary = withStyles((theme: Theme) => ({
   root: {
@@ -40,27 +40,27 @@ const CustomAccordionSummary = withStyles((theme: Theme) => ({
     },
   },
   expanded: {},
-}))(MuiAccordionSummary)
+}))(MuiAccordionSummary);
 
 const CustomAccordionDetails = withStyles((theme: Theme) => ({
   root: {
     padding: theme.spacing(2),
   },
-}))(MuiAccordionDetails)
+}))(MuiAccordionDetails);
 
 const CustomizedAccordion: React.FC<CustomizedAccordionProps> = ({ accordionData }) => {
-  const [expanded, setExpanded] = React.useState<string | false | number>(false)
+  // Sort the accordionData based on the 'ranking' property
+  const sortedAccordionData = accordionData.sort((a, b) => a.ranking - b.ranking);
 
-  const handleChange = (panel: number) => (
-    event: React.ChangeEvent<{}>,
-    newExpanded: boolean
-  ) => {
-    setExpanded(newExpanded ? panel : false)
-  }
+  const [expanded, setExpanded] = React.useState<string | false | number>(false);
+
+  const handleChange = (panel: number) => (event: React.ChangeEvent<{}>, newExpanded: boolean) => {
+    setExpanded(newExpanded ? panel : false);
+  };
 
   return (
     <>
-      {accordionData.map((data, index) => (
+      {sortedAccordionData.map((data, index) => (
         <CustomAccordion
           key={index}
           square
@@ -68,15 +68,13 @@ const CustomizedAccordion: React.FC<CustomizedAccordionProps> = ({ accordionData
           onChange={handleChange(index)}
         >
           <CustomAccordionSummary>
-         
+            {data.ranking}. {data.title}
           </CustomAccordionSummary>
-          <CustomAccordionDetails>
-            {data.content}
-          </CustomAccordionDetails>
+          <CustomAccordionDetails>{data.content}</CustomAccordionDetails>
         </CustomAccordion>
       ))}
     </>
-  )
-}
+  );
+};
 
-export default CustomizedAccordion
+export default CustomizedAccordion;
