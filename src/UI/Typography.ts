@@ -8,7 +8,14 @@ export const MainTitle = styled.h1`
 
 export const SubTitle = styled.h2`
    font-family: 'Roboto', sans-serif;
-   font-size: 2.0em;
+   font-size: 1.8em;
+`
+
+export const SmallTitle = styled.h3`
+   font-family: 'Roboto', sans-serif;
+   font-size: 1.2em;
+   font-weight: 200;
+   margin: 0 auto;
 `
 
 export const ParagraphMain = styled.p`

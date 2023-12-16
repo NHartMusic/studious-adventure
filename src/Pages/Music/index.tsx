@@ -1,6 +1,6 @@
 
 //component imports
-import List from './List'
+import List from './Albums2023List'
 
 //styles
 import { MusicTitle, MusicParagraph } from './styles'
