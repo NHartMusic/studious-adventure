@@ -1,3 +1,4 @@
+
 export const getRandomColorFromList = (): string => {
     const colorList = [
       '#C9F0F7',
@@ -11,16 +12,16 @@ export const getRandomColorFromList = (): string => {
       '#3BC7E3',
       '#29C2E0',
       '#1FB8D6',
-    ];
+    ]
   
     // Choose a random index from the colorList
-    const randomIndex = Math.floor(Math.random() * colorList.length);
+    const randomIndex = Math.floor(Math.random() * colorList.length)
   
     // Get the color at the random index
-    const randomColor = colorList[randomIndex];
+    const randomColor = colorList[randomIndex]
   
-    return randomColor;
-  };
+    return randomColor
+  }
   
   // Example usage
   export const randomColor1 = getRandomColorFromList()

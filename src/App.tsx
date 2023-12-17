@@ -4,10 +4,12 @@ import styled from 'styled-components'
 //nav
 import Header from './Navigation/Header'
 //components
+import Blog from './Pages/Blog/index'
+import Connect from './Pages/Connect/index'
 import Home from './Pages/Home/index'
 import Music from './Pages/Music/index'
 import Tech from './Pages/Tech/index'
-import Connect from './Pages/Connect/index'
+
 
 const ContentWrapper = styled.div`
   height: 100%;
@@ -22,9 +24,10 @@ function App() {
         <Header />
         <Routes>
           <Route path='/' element={<Home />} />
+          <Route path='/Blog' element={<Blog />} />
+          <Route path='/Connect' element={<Connect />} />
           <Route path='/Music' element={<Music />} />
           <Route path='/Tech' element={<Tech />} />
-          <Route path='/Connect' element={<Connect />} />
         </Routes>
       </ContentWrapper>
     </>

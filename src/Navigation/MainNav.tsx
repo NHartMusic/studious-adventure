@@ -1,3 +1,4 @@
+
 import { Link } from "react-router-dom"
 import styled from 'styled-components'
 import { randomColor2, randomColor4, randomColor6 } from '../UI/ColorGenerator'
@@ -29,7 +30,7 @@ const TechLink = styled(ListLink)`
   }
 `
 
-const ConnectLink = styled(ListLink)`
+const BlogLink = styled(ListLink)`
   &:hover {
     color: ${randomColor6};
     transition: 0.5s;
@@ -47,7 +48,7 @@ function MainNav() {
       <Navbar>
         <MusicLink to='/Music'>Music</MusicLink>
         <TechLink to='/Tech'>Tech</TechLink>
-        <ConnectLink to='/Connect'>Connect</ConnectLink>
+        <BlogLink to='/Blog'>Blog</BlogLink>
       </Navbar>
     </>
   )

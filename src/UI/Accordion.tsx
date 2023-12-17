@@ -1,21 +1,22 @@
-import * as React from 'react';
+
+import * as React from 'react'
 // Material UI Imports
-import { withStyles, Theme } from '@material-ui/core/styles';
-import MuiAccordion from '@material-ui/core/Accordion';
-import MuiAccordionSummary from '@material-ui/core/AccordionSummary';
-import MuiAccordionDetails from '@material-ui/core/AccordionDetails';
+import { withStyles, Theme } from '@material-ui/core/styles'
+import MuiAccordion from '@material-ui/core/Accordion'
+import MuiAccordionSummary from '@material-ui/core/AccordionSummary'
+import MuiAccordionDetails from '@material-ui/core/AccordionDetails'
 // Component Imports
-import { SmallTitle } from '../UI/Typography';
+import { SmallTitle } from '../UI/Typography'
 // Color imports
 import {
   randomColor1,
   randomColor2,
   randomColor3,
-} from './ColorGenerator';
+} from './ColorGenerator'
 
 // Define CustomizedAccordionProps interface
 interface CustomizedAccordionProps {
-  accordionData: Array<{ title: string; content: React.ReactNode; ranking: number }>;
+  accordionData: Array<{ title: string; content: React.ReactNode; ranking: number }>
 }
 
 const CustomAccordion = withStyles((theme: Theme) => ({
@@ -34,7 +35,7 @@ const CustomAccordion = withStyles((theme: Theme) => ({
     },
   },
   expanded: {},
-}))(MuiAccordion);
+}))(MuiAccordion)
 
 const CustomAccordionSummary = withStyles((theme: Theme) => ({
   root: {
@@ -51,23 +52,23 @@ const CustomAccordionSummary = withStyles((theme: Theme) => ({
     },
   },
   expanded: {},
-}))(MuiAccordionSummary);
+}))(MuiAccordionSummary)
 
 const CustomAccordionDetails = withStyles((theme: Theme) => ({
   root: {
     padding: theme.spacing(2),
   },
-}))(MuiAccordionDetails);
+}))(MuiAccordionDetails)
 
 const CustomizedAccordion: React.FC<CustomizedAccordionProps> = ({ accordionData }) => {
   // Sort the accordionData based on the 'ranking' property
-  const sortedAccordionData = accordionData.sort((a, b) => a.ranking - b.ranking);
+  const sortedAccordionData = accordionData.sort((a, b) => a.ranking - b.ranking)
 
-  const [expanded, setExpanded] = React.useState<string | false | number>(false);
+  const [expanded, setExpanded] = React.useState<string | false | number>(false)
 
   const handleChange = (panel: number) => (event: React.ChangeEvent<{}>, newExpanded: boolean) => {
-    setExpanded(newExpanded ? panel : false);
-  };
+    setExpanded(newExpanded ? panel : false)
+  }
 
   return (
     <>
@@ -85,7 +86,7 @@ const CustomizedAccordion: React.FC<CustomizedAccordionProps> = ({ accordionData
         </CustomAccordion>
       ))}
     </>
-  );
-};
+  )
+}
 
-export default CustomizedAccordion;
+export default CustomizedAccordion 

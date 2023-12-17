@@ -2,6 +2,11 @@ import { Link } from "react-router-dom"
 import styled from 'styled-components'
 import { randomColor3 } from '../UI/ColorGenerator'
 
+const Container = styled.div`
+  display: flex;
+  margin: 0 auto;
+`
+
 const HomeLink = styled(Link)`
   font-family: 'Roboto', sans-serif;
   font-size: 2.0rem;
@@ -20,7 +25,9 @@ const HomeLink = styled(Link)`
 function MainNav() {
     return (
       <>
+        <Container>
           <HomeLink to='/'>NH</HomeLink>
+        </Container>
       </>
     )
   }

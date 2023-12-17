@@ -1,3 +1,4 @@
+
 import { ConnectTitle, ConnectParagraph } from './styles'
 
 function Connect() {
