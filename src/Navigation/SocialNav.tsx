@@ -1,8 +1,10 @@
 
 import styled from 'styled-components'
-import IG_White from '../Assets/IG_White.png'
-import Github_White from '../Assets/Github_White.png'
-import LinkedIn_White from '../Assets/LinkedIn_White.png'
+import {
+  Github_White,
+  IG_White,
+  LinkedIn_White,
+} from '../Assets/Icons'
 
 const Icon = styled.img`
     width: 100%;
