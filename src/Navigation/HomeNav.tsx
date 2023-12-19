@@ -1,3 +1,4 @@
+
 import { Link } from "react-router-dom"
 import styled from 'styled-components'
 import { randomColor3 } from '../UI/ColorGenerator'
@@ -5,6 +6,7 @@ import { randomColor3 } from '../UI/ColorGenerator'
 const Container = styled.div`
   display: flex;
   margin: 0 auto;
+  width: 50%;
 `
 
 const HomeLink = styled(Link)`

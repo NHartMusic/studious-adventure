@@ -1,7 +1,7 @@
 import { Albums23ref } from '../../data/firebase'
 import * as React from 'react'
 import CustomizedAccordion from '../../UI/Accordion'
-import { ListWrapper } from './styles'
+import { ListWrapper } from '../Music/styles'
 
 import {
   onSnapshot,

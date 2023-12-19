@@ -1,7 +1,4 @@
 
-//component imports
-import List from './Albums2023List'
-
 //styles imports
 import { TextContainer, TitleContainer } from '../../UI/Containers'
 import { MusicTitle, MusicParagraph } from './styles'
@@ -12,7 +9,7 @@ function Music() {
         <TitleContainer>
           <MusicTitle>Music</MusicTitle>
         </TitleContainer>
-        <List />
+       
         <TextContainer>
           <MusicParagraph>
             Nec feugiat in fermentum posuere urna nec. Feugiat sed lectus vestibulum mattis ullamcorper. Facilisi 

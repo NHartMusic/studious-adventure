@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom"
+
 import styled from 'styled-components'
 import IG_White from '../Assets/IG_White.png'
 import Github_White from '../Assets/Github_White.png'
@@ -14,24 +14,37 @@ const Icon = styled.img`
     padding: 10px;
 `
 
+const LinkWrapper = styled.div`
+  display: flex;
+  margin: 0 auto;
+`
+
 const Navbar = styled.div`
   display: flex;
+  margin: 0 auto;
   float: right;
+  width: 25%; 
 `
 
 function SocialNav() {
   return (
     <>
         <Navbar>
+            <LinkWrapper>
             <a href="https://www.instagram.com/nhiacrkt/" target="_blank" rel="noopener noreferrer">
                 <Icon src={LinkedIn_White} />
             </a>
+            </LinkWrapper>
+            <LinkWrapper>
             <a href="https://www.instagram.com/nhiacrkt/" target="_blank" rel="noopener noreferrer">
                 <Icon src={IG_White} />
             </a>
+            </LinkWrapper>
+            <LinkWrapper>
             <a href="https://www.instagram.com/nhiacrkt/" target="_blank" rel="noopener noreferrer">
                 <Icon src={Github_White} />
             </a>
+            </LinkWrapper>
         </Navbar>   
     </>
   )

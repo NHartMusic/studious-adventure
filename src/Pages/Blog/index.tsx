@@ -1,10 +1,15 @@
 
+
+//component imports
+import List from '../Blog/Albums2023List'
+//styles imports
 import { BlogTitle, BlogParagraph } from './styles'
 
 function Blog() {
   return (
     <>
         <BlogTitle>Blog</BlogTitle>
+        <List />
         <BlogParagraph>
             Amet cursus sit amet dictum sit amet. Pulvinar proin gravida hendrerit lectus a. Purus in massa tempor nec feugiat 
             nisl pretium fusce id. Pellentesque diam volutpat commodo sed. Consectetur libero id faucibus nisl. Tellus integer 

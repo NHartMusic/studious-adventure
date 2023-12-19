@@ -40,6 +40,7 @@ const BlogLink = styled(ListLink)`
 const Navbar = styled.div`
   display: flex;
   float: left;
+  width: 25%;
 `
 
 function MainNav() {
