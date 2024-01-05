@@ -15,3 +15,8 @@ export const TitleContainer = styled.div`
     display: flex;
     margin: 0 auto;
 `
+
+export const ImageContainer = styled.div`
+    display: block; 
+    margin: 10px auto;
+`

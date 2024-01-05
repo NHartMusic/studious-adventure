@@ -1,13 +1,19 @@
 
+//images
+import { Nick_01, Hart_01 } from '../../Assets'
 //styles imports
 import { HomeTitle, HomeParagraph } from './styles'
-import { TextContainer } from '../../UI/Containers'
+import { ImageContainer, TextContainer } from '../../UI/Containers'
+import { BannerImage } from '../../UI/Media'
 
 function Home() {
   return (
     <>
-        <HomeTitle>Welcome Home</HomeTitle>
         <TextContainer> 
+          <ImageContainer>
+            <BannerImage src={Nick_01}/>
+            <BannerImage src={Hart_01}/>
+          </ImageContainer>
           <HomeParagraph>
             Tortor consequat id porta nibh. Suspendisse sed nisi lacus sed viverra tellus in. Vulputate sapien nec sagittis 
             aliquam malesuada. Posuere lorem ipsum dolor sit amet. At urna condimentum mattis pellentesque id nibh. Phasellus 
