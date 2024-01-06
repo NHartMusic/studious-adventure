@@ -1,14 +1,17 @@
 
+//images imports
+import { Music_Title } from '../../Assets'
 //styles imports
-import { TextContainer, TitleContainer } from '../../UI/Containers'
+import { TextContainer, ImageContainer, TitleContainer } from '../../UI/Containers'
+import { BannerImage } from '../../UI/Media'
 import { MusicTitle, MusicParagraph } from './styles'
 
 function Music() {
   return (
     <>
-        <TitleContainer>
-          <MusicTitle>Music</MusicTitle>
-        </TitleContainer>
+        <ImageContainer>
+            <BannerImage src={ Music_Title }/>
+          </ImageContainer>
        
         <TextContainer>
           <MusicParagraph>
