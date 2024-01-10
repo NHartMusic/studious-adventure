@@ -2,7 +2,7 @@
 //images
 import { Nick_01, Hart_01 } from '../../Assets'
 //styles imports
-import { HomeTitle, HomeParagraph } from './styles'
+import { HomeParagraph } from './styles'
 import { ImageContainer, TextContainer } from '../../UI/Containers'
 import { BannerImage } from '../../UI/Media'
 

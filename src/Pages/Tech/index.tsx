@@ -1,9 +1,19 @@
-import { TechTitle, TechParagraph } from './styles'
+
+//assets imports 
+import { Tech_Title } from '../../Assets'
+//styles imports
+import { TechParagraph } from './styles'
+import { ImageContainer } from '../../UI/Containers'
+import { BannerImage } from '../../UI/Media'
+
 
 function Tech() {
   return (
     <>
-        <TechTitle>Tech</TechTitle>
+        <ImageContainer>
+          <BannerImage src={ Tech_Title }/>
+        </ImageContainer>
+
         <TechParagraph>
           Non quam lacus suspendisse faucibus interdum posuere lorem ipsum. Dignissim cras tincidunt lobortis 
           feugiat. Pulvinar proin gravida hendrerit lectus a. Dictum varius duis at consectetur. Sed arcu non 

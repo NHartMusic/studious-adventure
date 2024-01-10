@@ -7,11 +7,12 @@ import { MenuBreakpoint } from '../UI/MediaQueries'
 
 const HeaderWrapper = styled.div`
     display: flex;
-    margin: 0 auto;
+    margin: 20px auto;
+    background-color: blue;
 
-    /* @media ${MenuBreakpoint} {
-        display: block;
-    } */
+     @media ${MenuBreakpoint} {
+        display: block !important;
+    } 
 
 `
 

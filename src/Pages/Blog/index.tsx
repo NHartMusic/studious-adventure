@@ -1,14 +1,20 @@
 
-
+//assets imports
+import { Blog_Title } from '../../Assets'
 //component imports
 import List from '../Blog/Albums2023List'
 //styles imports
-import { BlogTitle, BlogParagraph } from './styles'
+import { BannerImage } from '../../UI/Media'
+import { BlogParagraph } from './styles'
+import { ImageContainer } from '../../UI/Containers'
 
 function Blog() {
   return (
     <>
-        <BlogTitle>Blog</BlogTitle>
+        <ImageContainer>
+          <BannerImage src={ Blog_Title }/>
+        </ImageContainer>
+
         <List />
         <BlogParagraph>
             Amet cursus sit amet dictum sit amet. Pulvinar proin gravida hendrerit lectus a. Purus in massa tempor nec feugiat 

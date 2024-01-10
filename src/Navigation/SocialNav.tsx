@@ -1,4 +1,8 @@
 
+//media queries
+import { MenuBreakpoint } from '../UI/MediaQueries'
+
+//styles imports
 import styled from 'styled-components'
 import {
   Github_White,
@@ -14,6 +18,7 @@ const Icon = styled.img`
     max-width: 30px; 
     max-height: 30px;
     padding: 10px;
+    margin: 10px auto;
 `
 
 const LinkWrapper = styled.div`
@@ -26,6 +31,11 @@ const Navbar = styled.div`
   margin: 0 auto;
   float: right;
   width: 25%; 
+
+  @media ${MenuBreakpoint} {
+    width: 100%;
+    float: none;
+  }
 `
 
 function SocialNav() {
