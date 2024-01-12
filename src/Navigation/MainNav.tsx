@@ -6,6 +6,7 @@ import { MenuBreakpoint } from '../UI/MediaQueries'
 import { Link } from "react-router-dom"
 
 //styles imports
+import { blueList } from '../UI/Colors/Blues'
 import styled from 'styled-components'
 import { randomColor2, randomColor4, randomColor6 } from '../UI/ColorGenerator'
 
@@ -50,6 +51,7 @@ const Navbar = styled.div`
   @media ${MenuBreakpoint} {
     width: 100%;
     float: none;
+    background-color: ${blueList[5]};
   }
 `
 

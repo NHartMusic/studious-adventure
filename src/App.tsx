@@ -4,6 +4,7 @@ import { Routes, Route } from "react-router-dom"
 import styled from 'styled-components'
 //nav
 import Header from './Navigation/Header'
+import Footer from './Navigation/Footer'
 //components
 import Blog from './Pages/Blog/index'
 import Connect from './Pages/Connect/index'
@@ -30,6 +31,7 @@ function App() {
           <Route path='/Music' element={<Music />} />
           <Route path='/Tech' element={<Tech />} />
         </Routes>
+        <Footer />
       </ContentWrapper>
     </>
   )

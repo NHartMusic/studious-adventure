@@ -2,7 +2,7 @@
 //assets imports
 import { Blog_Title } from '../../Assets'
 //component imports
-import List from '../Blog/Albums2023List'
+import { Albums2023List } from './Posts'
 //styles imports
 import { BannerImage } from '../../UI/Media'
 import { BlogParagraph } from './styles'
@@ -15,7 +15,7 @@ function Blog() {
           <BannerImage src={ Blog_Title }/>
         </ImageContainer>
 
-        <List />
+        <Albums2023List />
         <BlogParagraph>
             Amet cursus sit amet dictum sit amet. Pulvinar proin gravida hendrerit lectus a. Purus in massa tempor nec feugiat 
             nisl pretium fusce id. Pellentesque diam volutpat commodo sed. Consectetur libero id faucibus nisl. Tellus integer 

@@ -4,6 +4,7 @@ import { MenuBreakpoint } from '../UI/MediaQueries'
 
 //styles imports
 import styled from 'styled-components'
+import { blueList } from '../UI/Colors/Blues'
 import {
   Github_White,
   IG_White,
@@ -35,6 +36,7 @@ const Navbar = styled.div`
   @media ${MenuBreakpoint} {
     width: 100%;
     float: none;
+    background-color: ${blueList[10]};
   }
 `
 
